@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 
-function App() {
+
+
+const App =()=> {
+  const bgStyle={
+    height:'100vh',
+    width:'100vw',
+    background:'linear-gradient(130deg, #FDD128 50%, white 50%)',
+    margin:'0px',
+    padding:'0px',
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg" style={bgStyle}>
+     
+       <Navbar/>
+      <Home/>
     </div>
   );
-}
 
+  };
 export default App;

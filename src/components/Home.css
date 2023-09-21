@@ -1,0 +1,56 @@
+#home{
+    display: flex;
+    height: calc(100vh - 8rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin:0 auto ;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.homeContent {
+    height: 100vh;
+    width: 100vw;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello{
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.homePara{
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn{
+    background: rgb(0, 0, 0);
+    color: white;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    width: 40%;
+}
+
+.image {
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    .bg {
+      right: -20vw;
+    }
+  }
